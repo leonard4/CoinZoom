@@ -1,3 +1,9 @@
+# Unity files/folders we don't need
+Library
+obj
+CoinZoom_Data
+CoinZoom.exe
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
