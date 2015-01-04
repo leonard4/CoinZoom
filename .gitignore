@@ -3,6 +3,9 @@ Library
 obj
 CoinZoom_Data
 CoinZoom.exe
+CoinZoom*.sln
+CoinZoom*.suo
+*.csproj
 
 # Windows image file caches
 Thumbs.db
