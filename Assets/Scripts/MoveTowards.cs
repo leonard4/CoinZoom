@@ -5,7 +5,7 @@ using System;
 
 public class MoveTowards : MonoBehaviour {
 
-    // Private gameobjects to set at runtime
+    // Private gameobjects that we will set at runtime
     GameObject coinAmountText;
     GameObject anchorPoint;
     // Speed at which the coins move
@@ -26,7 +26,6 @@ public class MoveTowards : MonoBehaviour {
         // Move towards the anchor position
         transform.position = Vector3.MoveTowards(transform.position, anchorPoint.transform.position, speed * Time.deltaTime);
 	}
-
 
     void OnCollisionEnter(Collision col)
     {

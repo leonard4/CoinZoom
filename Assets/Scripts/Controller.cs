@@ -21,6 +21,7 @@ public class Controller : MonoBehaviour {
         {
             // Draw a ray to the mouse position on screen
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			// Our ray once it hits something
             RaycastHit hit;
 
             // Check if our ray has hit something up to a distance of 20 from the camera
@@ -59,6 +60,7 @@ public class Controller : MonoBehaviour {
         {
             // Instantiate a coin at the master coin position
             tmpCoin = Instantiate(coinPrefab, coin.transform.position + new Vector3(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f), 0), coinPrefab.transform.rotation) as GameObject;
+			// Make the new smaller coin a random color
             tmpCoin.renderer.material.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
         }
     }
