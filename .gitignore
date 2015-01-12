@@ -1,7 +1,7 @@
 # Unity files/folders we don't need
-Library
-obj
-CoinZoom_Data
+Library/
+obj/
+CoinZoom_Data/
 CoinZoom.exe
 CoinZoom*.sln
 CoinZoom*.suo
